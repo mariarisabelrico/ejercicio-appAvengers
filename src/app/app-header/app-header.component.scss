@@ -1,0 +1,18 @@
+.main-header  {
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../img/hero-images.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}

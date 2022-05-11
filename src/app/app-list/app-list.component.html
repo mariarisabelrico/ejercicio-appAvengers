@@ -1,0 +1,32 @@
+<section id="" class="container-list">
+    <h2 class="hero-title">Los Vengadores</h2>
+    
+    <!-- Iteracion -->
+    <div
+      class="hero-card"
+      *ngFor="let heroe of heroes"
+      (click)="onClick()"
+      [ngClass]="{ 'is-active': isSelected }"
+    >
+      <img src="{{ heroe.img }}" alt="{{ heroe.name }}" class="hero-img" />
+      <div class="hero-description">
+        <h3 class="hero-name">{{ heroe.name }}</h3>
+        <a
+          class="hero-link"
+          href="{{ heroe.link }}"
+          target="_blank"
+          rel="noopener"
+          ><b>Ver Más</b></a
+        >
+      </div>
+    </div>
+    <!-- Iteracion -->
+  
+  
+  
+    <div class="container-elements">
+      <p class="number">Elementos Activos :</p>
+    </div>
+    {{ getAvengers() }}
+  </section>
+  
